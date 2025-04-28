@@ -1,0 +1,317 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : envatothemely
+* Plugin Name : Product Size Guide For WooCommerce
+* File          : CSS File
+* Version       : 1.0.0
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+01. Global Variables
+02. size chart css
+03. Responsive css
+-------------------------------------------------------------------------------------- */
+
+/************************************/
+/*** 	 01. Global Variables	  ***/
+/************************************/
+
+
+:root {
+  --color-dark: #111111;
+  --color-light: #aaa;
+  --color-grey: #ddd;
+  --color-bg: #f4f4f2;
+  --color-black: #000;
+  --color-white: #ffffff;
+}
+
+
+/************************************/
+/*** 	   02. size chart css		  ***/
+/************************************/
+.sizepsgf-size-guide-btn {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border: none;
+  padding: 6px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sizepsgf-size-guide-btn:focus {
+  outline: none;
+}
+
+.sizepsgf-size-guide-btn i {
+  font-size: 18px;
+}
+
+/* Modal Styling */
+.sizepsgf-cmfw-sizemodal .sizepsgf-cmfw-sizemodal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-sizechart-modal-content {
+  background-color: var(--color-white);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 960px;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-sizechart-close {
+  color: var(--color-light);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 5;
+  cursor: pointer;
+  position: relative;
+  top: -15px;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-sizechart-close:hover,
+.sizepsgf-cmfw-sizemodal .sizepsgf-sizechart-close:focus {
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Table Styling */
+.sizepsgf-cmfw-sizemodal table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.sizepsgf-cmfw-sizemodal th, .sizepsgf-cmfw-sizemodal td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid var(--color-grey);
+}
+
+.sizepsgf-cmfw-sizemodal tr:nth-child(odd) {
+  background-color: var(--color-bg);
+}
+
+.sizepsgf-size-additional-tab .sizepsgf-sizechart-modal-content {
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Modal Styling */
+.sizepsgf-cmfw-sizemodal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.sizepsgf-sizechart-close {
+  color: var(--color-light);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sizepsgf-sizechart-close:hover,
+.sizepsgf-sizechart-close:focus {
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sizepsgf-sizeguide-popup-modal-content {
+  background-color: var(--color-white);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px; 
+  width: 100%;
+  max-width: 960px;
+}
+
+.sizepsgf-cmfw-sizemodal.sizepsgf-size-additional-tab.cmfw-size-modal-extra {
+    display: block;
+    position: static;
+}
+
+.sizepsgf-cmfw-sizemodal.sizepsgf-size-additional-tab.cmfw-size-modal-extra {
+  background: transparent;
+}
+
+.sizepsgf-size-chart-chart-image-desc {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.sizepsgf-size-chart-desc {
+  flex: 0 0 60%;
+  text-align: left;
+}
+
+.sizepsgf-size-chart-thumbnail {
+  flex: 0 0 40%;
+}
+
+#sizepsgf-sizeguide-modal .sizepsgf-size-chart-chart-image-desc .sizepsgf-size-chart-desc {
+  flex: 0 0 50%;
+  text-align: left;
+}
+
+#sizepsgf-sizeguide-modal .sizepsgf-size-chart-thumbnail {
+  flex: 0 0 50%;
+}
+
+.sizepsgf-layout-two .cmfw-size-chart-image-and-chart {
+  display: flex;
+  gap: 20px;
+}
+
+.sizepsgf-layout-two .sizepsgf-size-chart-chart-image-desc {
+  flex-basis: 50%;
+}
+
+.sizepsgf-layout-two .sizepsgf-size-chart-table-content {
+  flex-basis: 50%;
+}
+
+.sizepsgf-size-chart-chart-image-desc.cmfw-desc-hidden .sizepsgf-size-chart-thumbnail {
+  flex: 0 0 100%!important;
+}
+.sizepsgf-size-chart-chart-image-desc.sizepsgf-image-hidden .sizepsgf-size-chart-desc {
+  flex: 0 0 100%!important;
+}
+
+
+.cmfw-size-chart-image-and-chart.image-and-chart {
+  display: block;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-two th,
+.sizepsgf-size-additional-tab .sizepsgf-layout-two th,
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-two td,
+.sizepsgf-size-additional-tab .sizepsgf-layout-two td
+{
+    border: none;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three th,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three th,
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three td,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three td
+{
+    border: none;;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.105);
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three tr,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three tr
+{
+  background-color: unset !important;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-two  tbody tr:first-child,
+.sizepsgf-size-additional-tab .sizepsgf-layout-two  tbody tr:first-child {
+  height: 70px;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three  tbody tr:first-child,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three  tbody tr:first-child {
+  background-color: #f4f4f2!important;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three  tbody tr:not(:first-child):hover,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three  tbody tr:not(:first-child):hover
+{
+  background-color: #f4f4f2!important;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three  tbody tr:not(:first-child) td:hover,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three  tbody tr:not(:first-child) td:hover
+{
+  background-color: #f1f1f1!important;
+}
+
+.sizepsgf-cmfw-sizemodal .sizepsgf-layout-three  tbody tr:first-child td,
+.sizepsgf-size-additional-tab .sizepsgf-layout-three  tbody tr:first-child td {
+  border: none;
+}
+
+.sizepsgf-cmfw-sizemodal .hide-image-and-desc .sizepsgf-size-chart-table-content {
+    flex-basis: 100%;
+}
+
+.sizepsgf-layout-three table,
+.sizepsgf-layout-three table th,
+.sizepsgf-layout-three table td {
+  border: none;
+}
+
+.sizepsgf-sizeguide-popup-modal-content > p {
+	padding-bottom: 30px;
+}
+.sizepsgf-sizeguide-popup-modal-content {
+  padding: 30px;
+}
+
+.sizepsgf-cmfw-sizemodal h2 {
+  margin-bottom: 10px;
+}
+
+/************************************/
+/*** 	   03. responsive css		  ***/
+/************************************/
+@media screen and (max-width: 600px) {
+  .sizepsgf-cmfw-sizemodal table, .sizepsgf-cmfw-sizemodal th, .sizepsgf-cmfw-sizemodal td {
+      display: block;
+      width: 100%;
+  }
+
+  .sizepsgf-cmfw-sizemodal thead {
+      display: none;
+  }
+  
+  .sizepsgf-cmfw-sizemodal tr {
+      margin-bottom: 10px;
+      border: 1px solid var(--color-grey);
+  }
+  
+  .sizepsgf-cmfw-sizemodal td {
+      padding: 12px;
+      text-align: left;
+      position: relative;
+  }
+  
+  .sizepsgf-cmfw-sizemodal td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+  }
+}

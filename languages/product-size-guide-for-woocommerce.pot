@@ -1,0 +1,252 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Size Guide For WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 13:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.7.1\n"
+"X-Domain: product-size-guide-for-woocommerce"
+#. %1$s is the plugin title, %2$s is the required PHP version.
+#: product-size-guide-for-woocommerce.php:55
+#, php-format
+msgid "%1$s requires PHP version %2$s+, plugin is currently NOT RUNNING."
+msgstr ""
+#: product-size-guide-for-woocommerce.php:156
+msgid "Activate WooCommerce"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:59
+msgid "Add New"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:58
+msgid "Add New Size Chart"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:180
+msgid "Apply On All Product?"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:84
+msgid "Assign Attribute"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:61
+msgid "Assign Category"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:72
+msgid "Assign Product"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:49
+msgid "Assign Tags"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:33
+msgid "Category Assign"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:99
+msgid "Copied!"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:100
+msgid ""
+"Copying to clipboard failed. You should be able to right-click the button "
+"and copy."
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:40
+msgid "Date"
+msgstr ""
+#. Description of the plugin
+msgid ""
+"Easily add size charts to your WooCommerce products using default templates "
+"or fully customizable options.."
+msgstr ""
+#: src/Common/Posttype/Posttype.php:61
+msgid "Edit Size Chart"
+msgstr ""
+#: src/class-cmfw-size-chart-options.php:171
+msgid "Exclude Product"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:76
+msgid "Filter from charts"
+msgstr ""
+#: src/Admin/AdminPanel/Settings/SizeChartManager.php:113
+msgid "General"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:336
+msgid "Hide Chart Table"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:332
+msgid "Hide Description"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:328
+msgid "Hide Thumbnail"
+msgstr ""
+#. Author URI of the plugin
+msgid "https://envatothemely.com"
+msgstr ""
+#. URI of the plugin
+msgid "https://envatothemely.com/product/sleeve-top-click-for-modal-view"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:72
+msgid "Insert into Size Chart"
+msgstr ""
+#: src/Admin/Ajax/SizeChartAjax.php:110
+msgid "Keyword is missing."
+msgstr ""
+#: src/Common/Posttype/Posttype.php:60
+msgid "New Size Chart"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:62
+#: src/Admin/Metaboxes/SizeChartColumns.php:64
+msgid "No categories assigned"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:92
+#: src/Admin/Metaboxes/SizeChartColumns.php:94
+msgid "No products assigned"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:205
+msgid "No products saved yet."
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:77
+#: src/Admin/Metaboxes/SizeChartColumns.php:79
+msgid "No tags assigned"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:66
+msgid "Not found"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:67
+msgid "Not found in Trash"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:106
+msgid "Other Options"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:56
+msgid "Parent Item:"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:50
+msgctxt "Post Type General Name"
+msgid "Size Chart"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:51
+msgctxt "Post Type Singular Name"
+msgid "Size Chart"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:35
+msgid "Product Assign"
+msgstr ""
+#: src/Admin/Metaboxes/Metaboxes.php:45
+msgid "Product Size Chars Custom Fields"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:186
+msgid "Products"
+msgstr ""
+#: src/Traitval/Traitval.php:170
+msgid "Px"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:70
+msgid "Remove image"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:187
+msgid "Search"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:212
+msgid "Search product name"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:65
+msgid "Search Size Charts"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartMetaBoxes.php:95
+msgid "Search/Select Size Chart"
+msgstr ""
+#: src/Traitval/Traitval.php:151
+msgid "select"
+msgstr ""
+#: src/class-cmfw-size-chart-options.php:172
+msgid "Select Categories"
+msgstr ""
+#: src/class-cmfw-size-chart-options.php:170
+msgid "Select Product"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:69
+msgid "Set size chart image"
+msgstr ""
+#: src/class-cmfw-size-chart-options.php:196
+msgid "Settings"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:36
+msgid "Shortcode"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:52 src/Common/Posttype/Posttype.php:53
+#: src/Common/Posttype/Posttype.php:86 src/Common/Posttype/Posttype.php:87
+#: src/Front/SizeChartProduct/SizeChartProduct.php:71
+msgid "Size Chart"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:54
+msgid "Size Chart Archives"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:55
+msgid "Size Chart Attributes"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:68
+msgid "Size chart Image"
+msgstr ""
+#. Name of the plugin
+#: product-size-guide-for-woocommerce.php:142
+msgid "Product Size Guide For WooCommerce"
+msgstr ""
+#: src/class-cmfw-size-chart-options.php:194
+#: src/Common/Posttype/Posttype.php:57 src/Common/Posttype/Posttype.php:74
+msgid "Size Charts"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:75
+msgid "Size Charts navigation"
+msgstr ""
+#: src/Front/SizeChartProduct/SizeChartProduct.php:143
+#: src/Front/SizeChartProduct/SizeChartProduct.php:152
+msgid "Size Guide"
+msgstr ""
+#: src/Admin/AdminPanel/Settings/SizeChartManager.php:85
+#: src/Admin/AdminPanel/Settings/SizeChartManager.php:86
+msgid "Size Settings"
+msgstr ""
+#: src/Admin/AdminPanel/Settings/SizeChartManager.php:114
+msgid "Tab Size Color"
+msgstr ""
+#: src/Admin/Metaboxes/SizeChartColumns.php:34
+msgid "Tag Assign"
+msgstr ""
+#: src/Front/SizeChartProduct/SizeChartProduct.php:145
+msgid "This is an approximate conversion table to help you find your size."
+msgstr ""
+#. %1$s is the plugin title, %2$s is the WordPress version.
+#: product-size-guide-for-woocommerce.php:75
+#, php-format
+msgid ""
+"To function, %1$s needs WordPress version %2$s or higher. The plugin is "
+"currently NOT RUNNING due to an outdated version."
+msgstr ""
+#: src/Common/Posttype/Posttype.php:62
+msgid "Update Size Chart"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:73
+msgid "Uploaded to this Size Chart"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:71
+msgid "Use as size chart image"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:63
+msgid "View Size Chart"
+msgstr ""
+#: src/Common/Posttype/Posttype.php:64
+msgid "View Size Charts"
+msgstr ""
+#: product-size-guide-for-woocommerce.php:178
+msgid "WooCommerce Install"
+msgstr ""
+#. Author of the plugin
+msgid "envatothemely"
+msgstr ""
+Loco Translate is powered by Locov2.7.10.13s

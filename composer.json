@@ -1,0 +1,14 @@
+{
+    "name": "envatothemely/product-size-guide-for-woocommerce",
+    "description": "Add extra size chart for woocommerce product page and change design style",
+    "type": "wordpress-plugin",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Envatothemely\\Sizechartpsgf\\": "src/"
+        },
+        "files": [ "src/functions.php"]
+    }
+}
