@@ -88,7 +88,7 @@ msgstr ""
 msgid "https://envatothemely.com"
 msgstr ""
 #. URI of the plugin
-msgid "https://envatothemely.com/product/sleeve-top-click-for-modal-view"
+msgid "https://github.com/faridmia/product-size-guide-for-woocommerce"
 msgstr ""
 #: src/Common/Posttype/Posttype.php:72
 msgid "Insert into Size Chart"

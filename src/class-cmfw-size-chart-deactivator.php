@@ -2,7 +2,7 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://envatothemely.com/product/sleeve-top-click-for-modal-view
+ * @link       https://github.com/faridmia/product-size-guide-for-woocommerce
  * @since      1.0.0
  *
  * @package    Product Size Guide For WooCommerce

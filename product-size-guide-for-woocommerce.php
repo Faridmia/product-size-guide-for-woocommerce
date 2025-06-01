@@ -1,18 +1,23 @@
 <?php
+
 /**
  * Plugin Name:       Product Size Guide For WooCommerce
  * Plugin URI:        https://github.com/faridmia/product-size-guide-for-woocommerce
  * Description:       Easily add size charts to your WooCommerce products using default templates or fully customizable options..
  * Version:           1.0.0
- * Author:            faridmia
- * Author URI:        https://profiles.wordpress.org/faridmia/
- * Text Domain:       product-size-guide-for-woocommerce
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       product-size-guide-for-woocommerce
+ * Requires at least: 6.4
+ * Requires PHP: 7.4
+ * Author: faridmia
+ * Author URI: https://profiles.wordpress.org/faridmia/
+ * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Requires Plugins: woocommerce
+ * Text Domain: product-size-guide-for-woocommerce
  */
 
+
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if (!defined('WPINC')) {
     die;
 }
 
@@ -43,7 +48,8 @@ require_once __DIR__ . '/vendor/autoload.php';
  *
  * @since 1.0.0
  */
-function sizepsgf_fail_php_version() {
+function sizepsgf_fail_php_version()
+{
 
     $message = sprintf(
         // Translators: %1$s is the plugin title, %2$s is the required PHP version.
@@ -52,7 +58,7 @@ function sizepsgf_fail_php_version() {
         '7.4'
     );
 
-    printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', wp_kses_post( $message ) );
+    printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', wp_kses_post($message));
 }
 /**
  * Display an admin notice if the WordPress version is not sufficient for the plugin.
@@ -62,7 +68,8 @@ function sizepsgf_fail_php_version() {
  *
  * @since 1.0.0
  */
-function sizepsgf_fail_wp_version() {
+function sizepsgf_fail_wp_version()
+{
 
     $message      = sprintf(
         // Translators: %1$s is the plugin title, %2$s is the WordPress version.
@@ -71,7 +78,7 @@ function sizepsgf_fail_wp_version() {
         '6.4'
     );
 
-    $error_message = sprintf('<div class="error">%s</div>', wpautop( $message ) );
+    $error_message = sprintf('<div class="error">%s</div>', wpautop($message));
     echo wp_kses_post($error_message);
 }
 
@@ -84,7 +91,8 @@ function sizepsgf_fail_wp_version() {
  *
  * @return void
  */
-function sizepsgf_load_textdomain() {
+function sizepsgf_load_textdomain()
+{
     // woocommerce  plugin dependency
     if (!function_exists('WC')) {
         add_action('admin_notices', 'sizepsgf_admin_notices');
@@ -95,7 +103,8 @@ function sizepsgf_load_textdomain() {
  * The code that runs during plugin activation.
  * This action is documented in src/class-cmfw-size-chart-activator.php
  */
-function sizepsgf_activate_func() {
+function sizepsgf_activate_func()
+{
     require_once SIZEPSGF_PLUGIN_PATH . 'src/class-cmfw-size-chart-activator.php';
     Sizechma_Activator::activate();
 }
@@ -104,13 +113,14 @@ function sizepsgf_activate_func() {
  * The code that runs during plugin deactivation.
  * This action is documented in src/class-cmfw-size-chart-deactivator.php
  */
-function sizepsgf__deactivate_func() {
+function sizepsgf__deactivate_func()
+{
     require_once SIZEPSGF_PLUGIN_PATH . 'src/class-cmfw-size-chart-deactivator.php';
     Sizechma_Woo_Deactivator::deactivate();
 }
 
-register_activation_hook( SIZEPSGF_PLUGIN_ROOT, 'sizepsgf_activate_func');
-register_deactivation_hook( SIZEPSGF_PLUGIN_ROOT, 'sizepsgf__deactivate_func');
+register_activation_hook(SIZEPSGF_PLUGIN_ROOT, 'sizepsgf_activate_func');
+register_deactivation_hook(SIZEPSGF_PLUGIN_ROOT, 'sizepsgf__deactivate_func');
 
 
 /**
@@ -123,12 +133,14 @@ register_deactivation_hook( SIZEPSGF_PLUGIN_ROOT, 'sizepsgf__deactivate_func');
  * @since    1.0.0
  */
 
-function sizepsgf__run_func() {
+function sizepsgf__run_func()
+{
     require_once __DIR__ . '/src/class-cmfw-size-chart-options.php';
 }
 
-function sizepsgf_admin_notices() {
-    
+function sizepsgf_admin_notices()
+{
+
     $woocommerce_plugin = 'woocommerce/woocommerce.php';
     $plugin_name = esc_html__('Product Size Guide For WooCommerce', 'product-size-guide-for-woocommerce');
 
@@ -147,7 +159,6 @@ function sizepsgf_admin_notices() {
                 __("Activate WooCommerce", "product-size-guide-for-woocommerce"),
             );
         }
-
     } else {
         // WooCommerce is not installed
         $plugin_name = 'WooCommerce';
@@ -178,9 +189,9 @@ function sizepsgf_admin_notices() {
 }
 
 
-add_action( 'before_woocommerce_init', function() {
-    if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
-        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', 'product-size-guide-for-woocommerce/product-size-guide-for-woocommerce.php', true );
+add_action('before_woocommerce_init', function () {
+    if (class_exists(\Automattic\WooCommerce\Utilities\FeaturesUtil::class)) {
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', 'product-size-guide-for-woocommerce/product-size-guide-for-woocommerce.php', true);
     }
 });
 

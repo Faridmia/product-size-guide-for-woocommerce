@@ -1,12 +1,14 @@
 === Product Size Guide For WooCommerce ===
 Contributors: faridmia
-Tags: size guide, size table,size chart, product size chart
+Donate Link: https://github.com/faridmia/product-size-guide-for-woocommerce
+Tags: size guide, woocommerce ,size chart, product size chart
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
 
 "Create detailed size charts to enhance shopping, reduce returns, and ensure customer satisfaction effortlessly."
 
@@ -59,7 +61,7 @@ To display a size chart with ID 129, use the following shortcode:
 
 = Installation =
 1. Unpack the download package
-2. Upload the plugin files to the `/wp-content/plugins/size-chart-manager-for-woocommerce` directory, or install the plugin through the WordPress plugins screen directly.
+2. Upload the plugin files to the `/wp-content/plugins/size-chart-guide-for-woocommerce` directory, or install the plugin through the WordPress plugins screen directly.
 3. Activate the plugin through the 'Plugins' screen in WordPress.
 4. Go to 'Size Chart' plugin
 
@@ -74,6 +76,7 @@ To display a size chart with ID 129, use the following shortcode:
 6.  **Size Chart Layout 1 Example:**
 7.  **Size Chart Layout 2 Example:**
 8.  **Size Chart Display on Product Page - Tab View:**
+
 
 == Requirements ==
 
@@ -113,10 +116,13 @@ A: Yes, you can choose to hide specific elements of a size chart.
 **Q: Does the plugin support responsive design?**
 A: Yes, the size charts are designed to be responsive and look good on all devices.
 
-## Changelog ##
+== Changelog ==
 
 
 = 1.0.0 =
 * Initial release
 
-= Upgrade Notice =
+== Upgrade Notice ==
+
+= 1.0 =
+Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
